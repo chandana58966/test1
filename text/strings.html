@@ -1,0 +1,164 @@
+<html>
+    <head>
+    <title>Python Tutorial</title>
+      <link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+            </li><li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+    <div class="sidebar">
+    <header>Python Concepts</header>
+    <ul class="nav-menu">
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+    </div>
+    <script>
+    $('.feat-btn').click(function(){
+      $('.sidebar ul.feat-show').toggleClass("show");
+      $('.sidebar ul li a i.first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+      $('.sidebar ul.serv-show').toggleClass("show1");
+      $('.sidebar ul li a i.second').toggleClass("rotate");
+    });
+    $('.serv-btn1').click(function(){
+      $('.sidebar ul.serv-show1').toggleClass("show2");
+      $('.sidebar ul li a i.third').toggleClass("rotate");
+    });
+    
+    </script>
+<div id="main">
+<div class="header">
+<header><b>Strings</b></header>
+<p>Python uses C-style string formatting to create new, formatted strings. The "%" operator is used to format a set of variables enclosed in a "tuple" (a fixed size list), together with a format string, which contains normal text together with "argument specifiers", special symbols like "%s" and "%d".</p>
+
+<p>Let's say you have a variable called "name" with your user name in it, and you would then like to print(out a greeting to that user.)
+
+</p>
+<strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+  # This prints out "Hello, John!"
+  name = "John"
+  print("Hello, %s!" % name)
+</code></pre></p>
+<strong>Run:</strong>
+<pre class="language-javascript"><code>
+  Hello, John!
+</code></pre>
+<p>To use two or more argument specifiers, use a tuple (parentheses):</p>
+<strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+  # This prints out "John is 23 years old."
+  name = "John"
+  age = 23
+  print("%s is %d years old." % (name, age))
+</code></pre></p>
+<strong>Run:</strong>
+<pre class="language-javascript"><code>
+  John is 23 years old.
+</code></pre>
+    
+
+<p>Any object which is not a string can be formatted using the %s operator as well. The string which returns from the "repr" method of that object is formatted as the string.</p>
+
+<strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+  # This prints out: A list: [1, 2, 3]
+  mylist = [1,2,3]
+  print("A list: %s" % mylist)
+</code>
+    </pre>
+    <strong>Run:</strong>
+    <pre class="language-javascript"><code>
+      A list: [1, 2, 3]
+    </code></pre>
+<b>Here are some basic argument specifiers you should know:</b>
+<li><a class="text-danger">%s</a> - String (or any object with a string representation, like numbers)</li>
+
+   <li><a class="text-danger">%d</a> - Integers</li> 
+    
+    <li><a class="text-danger">%f</a> - Floating point numbers</li>
+    
+    <li><a class="text-danger">%.<number of digits>f</a> - Floating point numbers with a fixed amount of digits to the right of the dot.</li>
+    
+    <li><a class="text-danger">%x/%X</a> - Integers in hex representation (lowercase/uppercase)</li>
+
+    <p>As you can see, the first thing you learned was printing a simple sentence. This sentence was stored by Python as a string. However, instead of immediately printing strings out, we will explore the various things you can do to them. You can also use single quotes to assign a string. However, you will face problems if the value to be assigned itself contains single quotes. For example to assign the string in these bracket(single quotes are ' ') you need to use double quotes only like this</p>
+    <strong>Here is an example:</strong>
+    <pre class="language-javascript"><code>
+        astring = "Hello world!"
+        print("single quotes are ' '")
+        
+        print(len(astring))</code></pre></p>
+    <strong>Run:</strong>
+    <pre class="language-javascript"><code>
+        single quotes are ' '
+        12</code></pre>
+<p>That prints out 4, because the location of the first occurrence of the letter "o" is 4 characters away from the first character. Notice how there are actually two o's in the phrase - this method only recognizes the first.
+But why didn't it print out 5? Isn't "o" the fifth character in the string? To make things more simple, Python (and most other programming languages) start things at 0 instead of 1. So the index of "o" is 4.</p>
+        <strong>Here is an example:</strong>
+    <pre class="language-javascript"><code>
+        astring = "Hello world!"
+        print(astring.count("0"))</code></pre></p>
+    <strong>Run:</strong>
+    <pre class="language-javascript"><code>
+        4</code></pre>
+    <p>For those of you using silly fonts, that is a lowercase L, not a number one. This counts the number of l's in the string. Therefore, it should print 3.</p>       
+    <strong>Here is an example:</strong>
+        <pre class="language-javascript"><code>
+            astring = "Hello world!"
+            print(astring[3:7])</code></pre></p>
+    <strong>Run:</strong>
+        <pre class="language-javascript"><code>
+        lo w</code></pre>
+<p>This prints a slice of the string, starting at index 3, and ending at index 6. But why 6 and not 7? Again, most programming languages do this - it makes doing math inside those brackets easier.
+If you just have one number in the brackets, it will give you the single character at that index. If you leave out the first number but keep the colon, it will give you a slice from the start to the number you left in. If you leave out the second number, it will give you a slice from the first number to the end.
+You can even put negative numbers inside the brackets. They are an easy way of starting at the end of the string instead of the beginning. This way, -3 means "3rd character from the end".</p>
+<strong>Example:</strong>
+
+
+
+
+       
+
+
+
+</body>
+</html>

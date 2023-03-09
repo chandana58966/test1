@@ -1,0 +1,123 @@
+<html>
+    <head>
+    <title>Python Tutorial</title>
+      <link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+    <div class="sidebar">
+    <header>Python Concepts</header>
+    <ul class="nav-menu">
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+    </div>
+    <script>
+    $('.feat-btn').click(function(){
+      $('.sidebar ul.feat-show').toggleClass("show");
+      $('.sidebar ul li a i.first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+      $('.sidebar ul.serv-show').toggleClass("show1");
+      $('.sidebar ul li a i.second').toggleClass("rotate");
+    });
+    $('.serv-btn1').click(function(){
+      $('.sidebar ul.serv-show1').toggleClass("show2");
+      $('.sidebar ul li a i.third').toggleClass("rotate");
+    });
+    
+    </script>
+<div id="main">
+<div class="header">
+<header><b>Lists</b></header>
+<p><b>Summary:</b>in this tutorial, you’ll learn about Python List type and how to manipulate list elements effectively.</p>
+
+<b>What is a List</b>
+<p>A list is an ordered collection of items.</p>
+<p>Python uses the square brackets ([]) to indicate a list. The following shows an empty list:</p>
+<p><strong>Here is an example:</strong>
+<pre class="language-javascript"><code>empty_list = []
+</code></pre>
+<p>Typically, a list contains one or more items. To separate two items, you use a comma (,). For example:</p>
+<pre class="language-javascript"><code>todo_list = ['Learn Python List','How to manage List elements']
+</code></pre>
+<p>Since a list often contains many items, it’s a good practice to name it using plural nouns e.g., numbers, colors, and shopping_carts.</p>
+<p>Lists are very similar to arrays. They can contain any type of variable, and they can contain as many variables as you wish. Lists can also be iterated over in a very simple manner. Here is an example of how to build a list.</p>
+<p><strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+mylist = []
+mylist.append(1)
+mylist.append(2)
+mylist.append(3)
+print(mylist[0]) # prints 1
+print(mylist[1]) # prints 2
+print(mylist[2]) # prints 3
+    
+# prints out 1,2,3
+for x in mylist:
+    print(x)
+</code></pre>
+<p><strong>Run:</strong>
+<pre class="language-javascript"><code>
+1
+2
+3
+1
+2
+3
+</code></pre>
+<p>Accessing an index which does not exist generates an exception (an error).</p>
+<strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+mylist = [1,2,3]
+print(mylist[10])
+</code></pre>
+<p><strong>Run:</strong>
+<pre class="language-javascript"><code>
+Traceback (most recent call last):
+File "<stdin>", line 2, in <module>
+print(mylist[10])
+IndexError: list index out of range
+</code></pre>
+
+
+</body>
+</html>

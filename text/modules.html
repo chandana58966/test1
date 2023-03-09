@@ -1,0 +1,204 @@
+<html>
+    <head>
+    <title>Python Tutorial</title>
+      <link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+    <div class="sidebar">
+    <header>Python Concepts</header>
+    <ul class="nav-menu">
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+    </div>
+    <script>
+    $('.feat-btn').click(function(){
+      $('.sidebar ul.feat-show').toggleClass("show");
+      $('.sidebar ul li a i.first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+      $('.sidebar ul.serv-show').toggleClass("show1");
+      $('.sidebar ul li a i.second').toggleClass("rotate");
+    });
+    $('.serv-btn1').click(function(){
+      $('.sidebar ul.serv-show1').toggleClass("show2");
+      $('.sidebar ul li a i.third').toggleClass("rotate");
+    });
+    
+    </script>
+<div id="main">
+<div class="header">
+<header><b>Modules</b></header>
+<p><b>Summary:</b>in this tutorial, you’ll learn about Python modules, how to import objects from a module, and how to develop your modules.</p>
+<b>Introduction to Python modules</b>
+<p>A module is a piece of software that has a specific functionality. A Python module is a file that contains Python code.</p>
+<p>For example, when building a shopping cart application, you can have one module for calculating prices and another module for managing items in the cart. Each module is a separate Python source code file.</p>
+<p>A module has a name specified by the filename without the <code>.py</code> extension. For example, if you have a file called <code>pricing.py</code>, the module name is <code>pricing</code>.
+</p><b>Writing Python modules</b>
+<p>First, create a new file called <code>pricing.py</code> and add the following code:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+    def get_net_price(price, tax_rate, discount=0):<br>
+
+        return price * (1 + tax_rate) * (1-discount)
+<br><br>    
+    
+    def get_tax(price, tax_rate=0):
+<br>
+        return price * tax_rate
+    </div>
+<p>The pricing module has two functions that calculate the net price and tax from the selling price, tax rate, and discount.</p>
+<b>Importing module objects</b>
+<p>To use objects defined in a module from another file, you can use the <code>import</code> statement.</p>
+<p>The <code>import</code> statement has several forms that we will discuss in the next sections.</p>
+<b>1) import &lt;module_name&gt;</b><p>To use objects defined in a module, you need to import the module using the following 
+        <code>import</code> statement:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+    import module_name
+    </div>
+<p>For example, to use the <code>pricing</code> module in the <code>main.py</code> file, you use the following statement:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+import pricing
+</div>
+<p>
+    When you import a module, Python executes all the code from the corresponding file. In this example, Python executes the code from the <code>pricing.py</code> file. Also, Python adds the module name to the current module.
+<br>
+This module name allows you to access functions, variables, etc. from the imported module in the current module. For example, you can call a function defined in the imported module using the following syntax:
+</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+module_name.function_name()
+</div>
+<p>The following shows how to use the get_net_price() function defined in the pricing module in the <code>main.py</code> file:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+import pricing
+<br>
+
+net_price = pricing.get_net_price(
+    price=100,
+    tax_rate=0.01
+)<br>
+
+print(net_price)
+</div>
+
+<b>2) import <module_name> as new_name</b>
+<p>If you don’t want to use the pricing as the identifier in the main.py, you can rename the module name to another as follows:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+import pricing as selling_price</div>
+
+<p>And then you can use the selling_price as the identifier in the main.py:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+net_price = selling_price.get_net_price(
+    price=100,
+    tax_rate=0.01
+)</div>
+<b>3) from <module_name> import </b>
+
+<p>If you want to reference objects in a module without prefixing the module name, you can explicitly import them using the following syntax:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+from module_name import fn1, fn2
+</div>
+<p>Now, you can use the imported functions without specifying the module name like this:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+fn1()<br>
+fn2()
+</div>
+<p>This example imports the get_net_price() function from the pricing module:</p>
+
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+# main.py
+<br>
+from pricing import get_net_price
+</div>
+<p>and use the get_net_price() function from the pricing module:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+
+from pricing import get_net_price
+<br>
+net_price = get_net_price(price=100, tax_rate=0.01)<br>
+print(net_price)
+</div>
+<b>4) from <module_name> import <name> as <new_name>: rename the imported objects</b>
+
+<p>It’s possible to rename an imported name to another by using the following import statement:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+    from <module_name> import <name> as <new_name>
+</div>
+<p>The following example renames the get_net_price() function from the pricing module to calculate_net_price() function:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+    from pricing import get_net_price as calculate_net_price
+<br>
+    net_price = calculate_net_price(<br>
+        price=100,<br>
+        tax_rate=0.1,<br>
+        discount=0.05<br>
+    )</div>
+<b>5) from <module_name> import * : import all objects from a module</b>
+<p>To import every object from a module, you can use the following syntax:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">from module_name import *</div>
+<p>
+    This import statement will import all public identifiers including variables, constants, functions, classes, etc., to the program.
+
+    However, it’s not a good practice because if the imported modules have the same object, the object from the second module will override the first one. The program may not work as you would expect.
+    
+    Let’s see the following example.
+    
+    First, create a new file called product.py and define the get_tax() function:
+</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);"># product.py
+    <br>def get_tax(price):
+        <br>return price * 0.1</div>
+
+<p>Both product and pricing modules have the get_tax() function. However, the get_tax() function from the product module has only one parameter while the get_tax() function from the pricing module has two parameters.
+
+    <br>Second, import all objects from both pricing and product modules and use the get_tax() function:</p>
+    <div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+    from pricing import *<br>
+    from product import *<br><br>
+    
+    tax = get_tax(100)<br>
+    print(tax)
+    </div>
+<p>Since the get_tax() function from the product module overrides the get_tax() function from the pricing module, you get the tax with a value of 10.</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<html>
+    <head>
+    <title>Python Tutorial</title>
+      <link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+    <div class="sidebar">
+    <header>Python Concepts</header>
+    <ul class="nav-menu">
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+    </div>
+    <script>
+    $('.feat-btn').click(function(){
+      $('.sidebar ul.feat-show').toggleClass("show");
+      $('.sidebar ul li a i.first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+      $('.sidebar ul.serv-show').toggleClass("show1");
+      $('.sidebar ul li a i.second').toggleClass("rotate");
+    });
+    $('.serv-btn1').click(function(){
+      $('.sidebar ul.serv-show1').toggleClass("show2");
+      $('.sidebar ul li a i.third').toggleClass("rotate");
+    });
+    
+    </script>
+<div id="main">
+<div class="header">
+<header><b>Operators</b></header>
+<br>
+<p>These are the special symbols in python and are used to execute an Arithmetic or Logical computation. An operator alone cannot perform an activity, it needs an Operand. What is an operand? An Operand is a value that the operator needs to complete a task.</p>
+<p>To understand it clearly, let’s consider an example over here.</p>
+
+<pre class="language-javascript"><code>&gt;&gt;&gt;10/2       
+5</code></pre>
+<p>Here, in the above example, we have used a Python Operator called / (Division). 10 and 2 are called as operands. The number 5 is called as output of the above execution.</p>
+<h2 id="types">Types of operators in Python:</h2>
+<p>We have multiple operators in Python, and each operator is subdivided into other operators. Let’s list them down and know about each operator in detail.</p>
+<ul>
+<li>Arithmetic operators</li>
+<li>Comparison operators</li>
+<li>Assignment operators</li>
+<li>Logical operators</li>
+<li>Bitwise operators</li>
+<li>Membership operators</li>
+<li>Special operators
+<ul style="list-style-type: circle;">
+<li>Identity operators</li>
+<li>Membership operators</li>
+</ul>
+</li>
+</ul>
+<h4 id="arithmetic">Arithmetic operators</h4>
+<p>Arithmetic operators are used for executing the mathematical functions in Python which includes, addition, subtraction, multiplication, division, etc.</p>
+<p>Let us know the various Arithmetic operators and their purpose in Python from the below table.</p>
+<table style="border-collapse: collapse; width: 100%; height: 168px;" border="1">
+<tbody>
+<tr style="height: 21px;">
+<td style="width: 33.3333%; height: 21px; text-align: center;"><strong>Operator</strong></td>
+<td style="width: 33.3333%; height: 21px; text-align: center;"><strong>Description</strong></td>
+<td style="width: 33.3333%; height: 21px; text-align: center;"><strong>Example</strong></td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 33.3333%; height: 21px;">+Plus</td>
+<td style="width: 33.3333%; height: 21px;">Adds two Operands.</td>
+<td style="width: 33.3333%; height: 21px;">3+3= 6</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 33.3333%; height: 21px;">-Minus</td>
+<td style="width: 33.3333%; height: 21px;">Right hand Operand subtracted from the left hand operand.</td>
+<td style="width: 33.3333%; height: 21px;">20-10=10</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 33.3333%; height: 21px;">* Multiplication</td>
+<td style="width: 33.3333%; height: 21px;">It Multiplies the values on either side of the operands.</td>
+<td style="width: 33.3333%; height: 21px;">10*10 = 100</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 33.3333%; height: 21px;">/ Division</td>
+<td style="width: 33.3333%; height: 21px;">left hand operand divided by right hand operand.</td>
+<td style="width: 33.3333%; height: 21px;">50/5 = 10</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 33.3333%; height: 21px;">% Percent</td>
+<td style="width: 33.3333%; height: 21px;">It divides the left hand operand by right hand one and also returns reminder.</td>
+<td style="width: 33.3333%; height: 21px;">6/2 = 3</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 33.3333%; height: 21px;">// Floor division</td>
+<td style="width: 33.3333%; height: 21px;">Division that results into whole number adjusted to the left in the number line.</td>
+<td style="width: 33.3333%; height: 21px;">&gt;&gt;&gt; 5.0 / 2 <br>2.5<br>&gt;&gt;&gt; 5.0 /2<br>2.0</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 33.3333%; height: 21px;">** Exponent</td>
+<td style="width: 33.3333%; height: 21px;">Left operand is raised to the power of right</td>
+<td style="width: 33.3333%; height: 21px;">10 to the power of 30</td>
+</tr>
+</tbody>
+</table>
+<p>Let’s examine different arithmetic operators with examples</p>
+<p><strong>1) Python (+) Addition operator</strong></p>
+<p>Addition operator in python is being used to add two operands (values) in python programming. Look at the below program to know how it works.</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code> X = 10
+  Y = 20
+  # output: x + y = 30
+  print ( ‘x + y =’, x + y )</code></pre>
+<p>When you execute the above program, you will get the below output.</p>
+<p><strong>Run</strong></p>
+<pre class="language-javascript"><code>x + y = 30</code></pre>
+<p><strong>2) Python (-) Subtraction operator</strong></p>
+<p>In python programing, the operator, Subtraction is used to execute a mathematical function which subtracts the right hand operand from the left hand one.</p>
+<p><strong>Program:</strong></p>
+<pre class="language-javascript"><code>x = 10  
+y = 20
+# output: x - y = - 10
+print (‘x - y =’, x - y )</code></pre>
+<p><strong>Run</strong></p>
+<pre class="language-javascript"><code>x - y = - 10</code></pre>
+<p><strong>3) Python (*) Multiplication operator</strong></p>
+<p>It is used in python programming to multiply the values and thereby to get output. Let's consider the below program to understand the multiplication operator.</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>x = 10  
+ y = 20
+ # output: x * y = 200
+ print (‘x * y =’, x * y )</code></pre>
+<p><strong>Run</strong></p>
+<pre class="language-javascript"><code>x * y = 200</code></pre>
+<p><strong>4) Python (/) Division operator</strong></p>
+<p>Division operator is used to divide&nbsp;the left hand operand by right hand one.</p>
+<p>x = 10<br>y = 20</p>
+<p>i.e x/y (10/20 = 0.5 )</p>
+<p>Let’s consider it in python way</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>  x = 10  
+ y = 20
+ # output: x / y = 0.5
+ print (‘x / y =’, x / y )</code></pre>
+<p><strong>Run</strong></p>
+<pre class="language-javascript"><code>x / y =  0.5</code></pre>
+<p><strong>5) Python (%) Percentail operator</strong></p>
+<p>The Percentile (%) is the string formatting operator in python, and it is also called as a interpretation operator. It divides the left hand operand by right hand one and also returns reminder. Ex: x/y</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code> x = 20  
+ y = 10
+ # output: x % y = 0.
+ print (‘x % y =’, x % y ) </code></pre>
+<p><strong>Run</strong></p>
+<pre class="language-javascript"><code>x % y = 0</code></pre>
+<p><strong>6)Python (//) Floor division operator</strong></p>
+<p>The Floor Operator is used to make a whole number adjusted to the left hand side in the number line.</p>
+<p>Let's check the below program to know how a floor operator works in Python</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>x = 50
+y = 20
+# Output: x // y = 2
+print('x // y =',x//y)</code></pre>
+<p><strong>Run</strong></p>
+<pre class="language-javascript"><code>x // y = 2</code></pre>
+<p><strong>7) Python (**) Exponent operator</strong></p>
+<p>Exponent operator is used in Python to perform exponential (power) calculations by using operators. Let's look into this concept with the help of a program.</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>x = 10
+y = 4
+# output: x ** y =
+print (‘x ** y =’, x ** y )</code></pre>
+<p><strong>Run</strong></p>
+<pre class="language-javascript"><code>x ** y = 10,000</code></pre>
+<b>Python Comparison Operators</b>
+<p>The name itself is explaining that this operator is used to compare different things or values with one another. In Python, the Comparison operator is used to analyze either side of the values and decides the relation between them. Comparison operator is also termed as a relational operator because it explains the connection between them.</p>
+<p>We have different Comparison (Relational) operators. Let’s list them down and get to know each operator in detail.</p>
+
+<li>== Equal</li>
+<li>!= Not Equal</li>
+<li>&lt;&gt; Two Operands are not equal</li>
+<li>&gt; Greater Than</li>
+<li>&lt; Less Than</li>
+<li>&gt;= Greater Than or Equal to</li>
+<li>&lt;= Less Than or Equal to</li>
+
+<p>Before jumping into the details of comparison, let’s consider two values which could help us in understanding each one</p>
+<p><strong>Assume:</strong> x = 20, y = 25</p>
+<p><strong>1) Python (==) Equal Comparison Operator</strong></p>
+<p>Equal operator is used to compare the two values and to give the result whether they are equal or not. If both the values are equal, then it gives the result as True, if not False.</p>
+<p>Let's consider below program.</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>x = 20
+y = 25
+# Output: x == y is False
+print('x == y is',x==y)</code></pre>
+<p><strong>Run:</strong></p>
+<pre class="language-javascript"><code>x == y is False</code></pre>
+<p><strong>2) Python (!=) Not Equal Comparison Operator</strong></p>
+<p>This Not equal operator is used to compare two operands and returns True statement if they are Not equal, and False if they are Equal.</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>x = 20
+ y = 25  
+# Output: x != y is True
+print('x != y is',x!=y)
+</code></pre>
+<p><strong>Run:</strong></p>
+<pre class="language-javascript"><code>x != y is true </code></pre>
+<p>Note: In the above program, the two values are not equal to one another, the Not equal operator is exclusively used to return the True statement if the values are not equal.</p>
+<p><strong>3) Python (&gt;) Greater Than Operator</strong></p>
+<p>This operator is mainly used in Python to return true if the Left hand value is greater than right one. If left hand operand is greater than right hand operand, it returns True as the output.</p>
+<p><strong>Ex:</strong> 10 is &gt; 8, then the answer becomes True</p>
+<p>10 is &gt; 12, then the answer becomes False</p>
+<p><strong>Program:</strong></p>
+<p><strong>ex :</strong></p>
+<pre class="language-javascript"><code>x = 20
+ y = 25  
+# Output: x &gt; y is False
+print('x &gt; y  is',x&gt;y)</code></pre>
+<p><strong>Run:<br></strong></p>
+<pre class="language-javascript"><code> x &gt; y is False </code></pre>
+<p><strong>4) Python (&lt;) Less Than Operator</strong></p>
+<p>This Operator compares the right hand operator with the left hand one and if the right hand one is greater than the left hand one, it returns True statement.</p>
+<p><strong>Ex:</strong> 10 is &lt; 12, then the answer becomes True</p>
+<p>10 is &lt; 8, then the answer becomes False</p>
+<p><strong>Program:</strong></p>
+<pre class="language-javascript"><code>x = 20
+ y = 25  
+# Output: x &lt; y is True
+print('x &lt; y  is',x&lt;y)</code></pre>
+<p><strong>Run:</strong></p>
+<pre class="language-javascript"><code>x &lt; y is True</code></pre>
+<p><strong>5) Python &gt;= Greater Than or Equal to operator</strong></p>
+<p>Greater than operator is used in python to evaluate to True if the left hand operand is &gt;= (greater than or equal) to right hand one</p>
+<p><strong>Program:</strong></p>
+<pre class="language-javascript"><code>x = 20
+ y = 25 
+# Output: x &gt;= y is False
+print('x &gt;= y is',x&gt;=y)
+</code></pre>
+<p><strong>Run:</strong></p>
+<pre class="language-javascript"><code>x &gt;= y. Hence it is  False </code></pre>
+<p><strong>6) Python &lt;= Less than or equal to operator</strong></p>
+<p>Less than or equal to operator returns true if the right hand operator is greater than or equal to left hand one.</p>
+<p><strong>Program:</strong></p>
+<pre class="language-javascript"><code> x = 20
+ y = 25 
+# Output: x &lt;= y is True
+print('x &lt;= y is',x&lt;=y)</code></pre>
+<p><strong>Run:</strong></p>
+<pre class="language-javascript"><code>x &lt;=y is True</code></pre>
+<b>Python Assignment Operators</b>
+<p>Assignment operator is used to assign value to the event, property, or variable. We use this operator in python to assign values to variables. We have multiple Assignment operators. Let’s list them down and know things better.</p>
+ 
+<li>= Assign Value</li>
+<li>+= Add AND</li>
+<li>-= Subtract AND</li>
+<li>*= Multiply AND</li>
+<li>/= Divide AND</li>
+<li>%= Modulus AND</li>
+<li>**= Exponent AND</li>
+<li>//= Floor Division</li>
+
+<p><strong>1) Python (=) Assign value Operator</strong></p>
+<p>This operator assigns values to the left hand operand from the right side operand.</p>
+<p><strong>Example:</strong> 5 = 2+3</p>
+<p>In the above example, the right hand operands are 2 &amp; 3, and have contributed to construct value 5.</p>
+<p><strong>2) Python (+=) Add AND Operator</strong></p>
+<p>It adds the value of right operand to the value of left hand operand.</p>
+<p>Let's consider an <strong>example</strong>; x = 10, x + = 5, which will return the value as 15 by adding the right side value to the left hand one. Therefore, the answer is x= 15.</p>
+<p><strong>3) Python(-=) Subtract AND Operator</strong></p>
+<p>Subtract And operator (-=) subtracts the value of left operand from the right side operand and returns the output.</p>
+<pre class="language-javascript"><code>x = 10, y -= 7, the answer is x = 3</code></pre>
+<p style="text-align: right;">&nbsp;</p>
+<p><strong>4) Python (*=) Multiply AND Operator</strong></p>
+<p>It multiplies the left hand operand with the right hand one and returns the value as output.</p>
+<p><strong>Example;&nbsp;</strong></p>
+<pre class="language-javascript"><code> x = 10, x*=5, the answer is x = 50.</code></pre>
+<p><strong>5) Python (/=) Divide AND Operator</strong></p>
+<p>Divide And operator divides the left hand operand with the right hand operand value and gives the result</p>
+<p><strong>Example;&nbsp;</strong></p>
+<pre class="language-javascript"><code>x = 10, x/= 5 the result is x = 2</code></pre>
+<p><strong>6) Python (%=) Modulus AND Operator</strong></p>
+<p>It divides the value of left hand operand with the right hand one and the reminder that we get through this task will be placed as a value of x.</p>
+<p><strong>Example;&nbsp;</strong></p>
+<pre class="language-javascript"><code>x = 10, x%= 5 the result is x = 0</code></pre>
+<p><strong>7) Python **= Exponent AND operator</strong></p>
+<p>It gives us the exponential value of the left hand operand when raised to the power of the value found in the right hand side.</p>
+<p><strong>Example;&nbsp;</strong></p>
+<pre class="language-javascript"><code>x = 10, x**= 5 the result is x = 1,00,000</code></pre>
+<p><strong>8) Python (//=) Floor Division</strong></p>
+<p>Floor division divides the value found in the left hand side with the value of right hand operand. The integer value becomes the left hand Operand value.</p>
+<p><strong>Example;&nbsp;</strong></p>
+<pre class="language-javascript"><code>x = 7, x//= 4 the result is x = 1</code></pre>
+<b>Python logical Operators</b>
+<p>Logical operators are used in any programming language to make decision based on multiple conditions. In python, we use Logical operators to determine whether a condition is True or False by taking Operand values as base. Let’s consider different logical operators that are used in python programming.</p>
+
+<li>And - Logical AND</li>
+<li>Or - Logical OR</li>
+<li>Not - Logical NOT</li>
+
+<p style="text-align: right;">&nbsp;</p>
+<p><strong>1) Python and Logical AND operator</strong></p>
+<p>AND operator returns the logical value ‘True’ when two Operands are true; otherwise, it will return False.</p>
+<p><strong>Ex:</strong> &nbsp;variable A = 10, B = 20, <strong><br></strong></p>
+<pre class="language-javascript"><code>x = 10
+y = 20
+# Output: x and y is True 
+print('x and y is',x and y)
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre class="language-javascript"><code>Ans: A and B is True</code></pre>
+<p><strong>2) Python or Logical OR operator</strong></p>
+<p>In this Logical OR operator, if any one of the two operands are non zero, then it returns the True condition. .</p>
+<p><strong>Ex:</strong> variable A = 10, B = 20,</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>x = 10
+y = 20
+# Output: x or y is True
+print('x or y is',x or y)
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre class="language-javascript"><code>Ans: a or b is True</code></pre>
+<p><strong>3) Python not Logical NOT</strong></p>
+<p>Logical NOT is used to reverse the logical state of its operands.</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>x = 10
+y = 20
+# Output: not x is False
+print('not x is',not x)</code></pre>
+<p><strong>Output:</strong></p>
+<pre class="language-javascript"><code>Ans: Not (a and b) is false.</code></pre>
+<b>Python Bitwise operators</b>
+<p>Bitwise operators are used in python to perform the operations on binary numerals or bit patterns. It operates bit by bit.</p>
+
+<li>&amp; Binary AND</li>
+<li>| Binary OR</li>
+<li>^ Binary XOR</li>
+<li>~ Binary Ones Complement</li>
+<li>&lt;&lt; Binary Left Shift</li>
+<li>&gt;&gt; Binary Right Shif</li>
+
+<p><strong>1) Python &amp; Binary AND Bitwise Operator</strong></p>
+<p><strong>Description:</strong> This operator performs bit by bit AND operations on the values on either side of the operator.</p>
+<p><strong>Example Program</strong></p>
+<pre class="language-javascript"><code>a = 10
+b = 4
+# Print bitwise AND operation   
+print(a &amp; b)</code></pre>
+<p><strong>Output:</strong> 0</p>
+<p><strong>2) Python | Binary OR Bitwise Operator</strong></p>
+<p><strong>Description:</strong> This operator performs bit by bit OR operations on the values on either side of the operator.</p>
+<p><strong>Example Program</strong></p>
+<pre class="language-javascript"><code>a = 10
+b = 4
+# Print bitwise OR operation
+print(a | b)</code></pre>
+<p><strong>Output:</strong> 14</p>
+<p><strong>3) Python ^ Binary XOR Bitwise Operator</strong></p>
+<p><strong>Description:</strong> This operator performs bit by bit exclusive OR operations on the values on either side of the operator.</p>
+<p><strong>Example Program</strong></p>
+<pre class="language-javascript"><code>a = 10
+b = 4
+# print bitwise XOR operation 
+print(a ^ b)
+</code></pre>
+<p><strong>Output:</strong> 14</p>
+<p><strong>4) Python ~ Binary Ones Complement Bitwise Operator</strong></p>
+<p><strong>Description:</strong> The one’s complement of a number’s binary is returned.</p>
+<p><strong>Example Program:</strong></p>
+<pre class="language-javascript"><code>a = 10
+b = 4
+# Print bitwise NOT operation 
+print(~a)</code></pre>
+<p><strong>Output:</strong> -11</p>
+<p><strong>5) Python &lt;&lt; Binary Left shift Bitwise Operator</strong></p>
+<p>Description: The value to the left operator is shifted to the left as many times as the value on the right side of the operator.</p>
+<p><strong>Example Program</strong></p>
+<pre class="language-javascript"><code>a = 10
+b = 4
+# print bitwise left shift operation 
+print(a &lt;&lt; 2)</code></pre>
+<p><strong>Output:</strong> 40</p>
+<p><strong>6) Python &gt;&gt; Binary Right shift Bitwise Operator</strong></p>
+<p>Description: The value to the left of the operator is shifted to the right as many times as the value on the right of the operator.</p>
+<pre class="language-javascript"><code>a = 10
+b = 4
+# print bitwise right shift operation 
+print(a &gt;&gt; 2)</code></pre>
+<p><strong>Output:</strong> 2</p>
+<b>Python Membership operators</b>
+<p>Membership Operators are mainly used in python to find whether a value or variable is present in a sequence (string, tuple, list, set, and directory). “In” and “Not In” are the two membership operators available in python.</p>
+<p>Let’s get to know each operator in detail.</p>
+<p><strong>1) Python In Membership Operator</strong></p>
+<p>This In operator is used in python to evaluate if a particular value is there or not in a sequence. The In operator returns True if it the specified element found in the list, otherwise it returns false.</p>
+<p>Let’s consider a python program on how In operator works.</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code>a  = 10
+b  =  7 
+list = [1,2,3,4,5,6,7,8,9..) 
+
+If (a is in list):
+   print: line - 1 “a is presented in the list” 
+else 
+    print: line - 1 “a is not presented in the list”
+If (b is in list):
+   print: line - 2 “b is presented in the list” 
+else 
+    print: line - 2 “b is not presented in the list”
+</code></pre>
+<p>When you are done with the execution of above program, you will get the below output:</p>
+<pre class="language-javascript"><code>Line - 1- a is not available in the list. Hence False.
+Line - 2- b is  available in the list. Hence True  
+</code></pre>
+<p><strong>2) python Not in Membership Operator</strong></p>
+<p>“Not in” operator, the name itself is expressing the meaning that something is not inside. It goes through a particular sequence to find weather a value is in the specified list or not. If it finds there is no such value, it returns True, otherwise False.</p>
+<p>Let’s consider a python program on how Not In operator works:</p>
+<p><strong>Program</strong></p>
+<pre class="language-javascript"><code># Not ‘in’ Operator  
+x = 23
+y = 20 
+list = [10, 15,20,  30, 35, 40,45, 50]; 
+if (x is not in list)
+   print: “ x is not available in the list” 
+else 
+   print: “ x is available in the  given list” 
+if (y is not in list)
+   print: “ y is not available in the  given list” 
+else 
+   print: “ y is available in the given list” 
+</code></pre>
+<p><strong>Run:</strong></p>
+<pre class="language-javascript"><code>Line 1 - x is not there in given list. Hence True.
+Line 2 - y is there in given list. Hence False.</code></pre>
+<b>Python Identity operators</b>
+<p>We have two identity operators in python namely is and is not. These are also called as special operators and are used to find if two identical values (or variables) located on the same part of the memory or not. If two variables are equal, that does not mean they are identical. We have two different operators.</p>
+<p><strong>1) Python is Identity operator</strong></p>
+<p>This operator returns true statement if two identical operands reside in the same memory, otherwise false.</p>
+<p>Let's look at the small program on how the '<em><strong>is'</strong></em> is used in python.</p>
+<p><strong>example</strong></p>
+<pre class="language-javascript"><code>x = 6
+if (type(x) is int):
+    print ("true")
+else:
+    print ("false")
+</code></pre>
+<p><strong>Output</strong></p>
+<pre class="language-javascript"><code>True</code></pre>
+<p><strong>2) Python Is not Identity operator</strong></p>
+<p>It will return false if either side of the operator pointing towards the same thing, otherwise it returns true.</p>
+<p>Let's look at the program to know how Is not operator will work;</p>
+<p><strong>example</strong></p>
+<pre class="language-javascript"><code>x = 4.5 
+If (type (x) is not int) : 
+Print (“true”) 
+else:
+    print ("false")</code></pre>
+<p><strong>Output</strong></p>
+<pre class="language-javascript"><code>True</code></pre>
+
+
+
+</body>
+</html>

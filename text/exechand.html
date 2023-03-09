@@ -1,0 +1,172 @@
+ <html>
+    <head>
+    <title>Python Tutorial</title>
+      <link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+    <div class="sidebar">
+    <header>Python Concepts</header>
+    <ul class="nav-menu">
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+    </div>
+    <script>
+    $('.feat-btn').click(function(){
+      $('.sidebar ul.feat-show').toggleClass("show");
+      $('.sidebar ul li a i.first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+      $('.sidebar ul.serv-show').toggleClass("show1");
+      $('.sidebar ul li a i.second').toggleClass("rotate");
+    });
+    $('.serv-btn1').click(function(){
+      $('.sidebar ul.serv-show1').toggleClass("show2");
+      $('.sidebar ul li a i.third').toggleClass("rotate");
+    });
+    
+    </script>
+<div id="main">
+<div class="header">
+<header><b>Execption Handling</b></header>
+<p> <b>Summary:</b> in this tutorial, you’ll learn how to use the Python statements to handle exceptions gracefully.
+
+   <br> In Python, there’re two main kinds of errors: syntax errors and exceptions.
+    
+    </p>
+<b>Syntax errors</b>
+<p>When you write an invalid Python code, you’ll get a syntax error. For example:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">current = 1
+ <br>   if current < 10
+ <br>   current += 1
+</div>
+<p>If you attempt to run this code, you’ll get the following error:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+File "d:/python/try-except.py", line 2<br>
+    if current < 10<br>
+                  
+SyntaxError: invalid syntax<br>
+</div>
+<p>In this example, the Python interpreter detected the error at the if statement since a colon (:) is missing after it.
+
+<br>The Python interpreter shows the file name and line number where the error occurred so that you can fix it.</p>
+<b>Exceptions</b>
+<p>Even though when your code has valid syntax, it may cause an error during execution.
+</p> Python, errors that occur during the execution are called exceptions. The causes of exceptions mainly come from the environment where the code executes. For example:</p>
+<li>Reading a file that doesn’t exist.</li>
+<li>Connecting to a remote server that is offline.</li>
+<li>Bad user inputs.</li>
+
+<p>When an exception occurs, the program doesn’t handle it automatically. This results in an error message.
+<br>
+For example, the following program calculates the sales growth:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+# get input net sales
+print('Enter the net sales for')<br><br>
+
+previous = float(input('- Prior period:'))<br>
+current = float(input('- Current period:'))<br><br>
+
+# calculate the change in percentage<br>
+change = (current - previous) * 100 / previous<br><br>
+
+# show the result<br>
+if change > 0:<br>
+result = f'Sales increase {abs(change)}%'<br>
+else:<br>
+result = f'Sales decrease {abs(change)}%'<br>
+
+print(result)
+</div>
+<p>How it works.</p>
+
+<li>First, prompt users for entering two numbers: the net sales of the prior and current periods.</li>
+<li>Then, calculate the sales growth in percentage and show the result.</li>
+<p>When you run the program and enter 120' as the net sales of the current period, the Python interpreter will issue the following output:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+Enter the net sales for<br>
+- Prior period:100<br>
+- Current period:120'<br>
+Traceback (most recent call last):<br>
+  File "d:/python/try-except.py", line 5, in <module><br>
+    current = float(input('- Current period:'))<br>
+ValueError: could not convert string to float: "120'"
+</div>
+<p>The Python interpreter showed a traceback that includes detailed information of the exception:</p>
+<li>The path to the source code file (d:/python/try-except.py) that caused the exception.</li>
+<li>The exact line of code that caused the exception (line 5)</li>
+<li>The statement that caused the exception current = float(input('- Current period:'))</li>
+<li>The type of exception ValueError</li>
+<li>The error message: ValueError: could not convert string to float: "120'"</li>
+
+<p>Because float() couldn’t convert the string 120' to a number, the Python interpreter issued a ValueError exception.</p>
+<p>In Python, exceptions have different types such as TypeError, NameError, etc.</p>
+
+<b>Handling exceptions</b>
+
+<p>To make the program more robust, you need to handle the exception once it occurs. In other words, you need to catch the exception and inform users so that they can fix it.
+
+ <br>   A good way to handle this is not to show what the Python interpreter returns. Instead, you replace that error message with a more user-friendly one.
+    
+  <br>  To do that, you can use the Python try...except statement:</p>
+<div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">
+  try:<br>
+  # code that may cause error<br>
+except:<br>
+  # handle errors
+  </div>
+<p>The try...except statement works as follows:</p>
+<li>The statements in the try clause execute first.</li>
+<li>If no exception occurs, the except clause is skipped and the execution of the try statement is completed.</li>
+<li>If an exception occurs at any statement in the try clause, the rest of the clause is skipped and the except clause is executed.</li>
+
+<p>So to handle exceptions using the try...except statement, you place the code that may cause an exception in the try clause and the code that handles exceptions in the except clause.
+
+    Here’s how you can rewrite the program and uses the try...except statement to handle the exception:</p>
+
+    <p>sometimes program will issue the message that you specified in the except block instead:</p>
+    <div class="w-50 p-3" style="background-color: rgb(182, 216, 236);">Enter the net sales for<br>
+        - Prior period:100<br>
+        - Current period:120'<br>
+        Error! Please enter a number for net sales.</div>    
+</body>
+</html>

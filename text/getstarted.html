@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Python Tutorial</title>
+	<link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+<div class="sidebar">
+<header>Python Concepts</header>
+<ul class="nav-menu">
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+</div>
+<script>
+$('.feat-btn').click(function(){
+	$('.sidebar ul.feat-show').toggleClass("show");
+	$('.sidebar ul li a i.first').toggleClass("rotate");
+});
+$('.serv-btn').click(function(){
+	$('.sidebar ul.serv-show').toggleClass("show1");
+	$('.sidebar ul li a i.second').toggleClass("rotate");
+});
+$('.serv-btn1').click(function(){
+	$('.sidebar ul.serv-show1').toggleClass("show2");
+	$('.sidebar ul li a i.third').toggleClass("rotate");
+});
+
+</script>
+
+<div id="main">
+<div class="header">
+<header><b>Get Started with Python</b></header>
+
+<p>Python is a general-purpose, high-level, interpreted, object-oriented programming language used for various applications.</p>
+<p class="font-weight-bolder">Why Python?</p>
+<p>Python was developed by Guido Van Rossum in 1989 while working at National Research Institute in the Netherlands. But officially, Python was made available to the public in 1991.</p>
+<p>Python code syntax uses English keywords, making it easy to understand. Therefore, Python is recommended as the first programming language for beginners.</p>
+<p>In addition, it includes high-level data structures, dynamic typing, dynamic binding, and many more features that make it very attractive for rapid application development.</p>
+<p>The Python interpreter and the extensive standard library are available in source or binary form for all major platforms. In addition, it has a wide range of standard and third-party libraries that helps in rapid application development.</p>
+
+<p class="font-weight-bolder">Applications</p>
+<p>We can use Python everywhere because Python is known for its general-purpose nature, which makes it applicable in almost every domain of software development. The most common application areas are:
+    
+        <li>Desktop Applications</li>
+        <li>Web Applications</li>
+        <li>Database Applications</li>
+        <li>Network Programming</li>
+        <li>Games</li>
+        <li>Data Analysis Applications</li>
+        <li>Machine Learning</li>
+        <li>Artificial Intelligence Applications</li>
+        <li>IoT</li>
+      </p>
+      <p class="font-weight-bolder">Installation</p>
+      <p> Python is available on a wide variety of platforms including Linux and Mac OS X. Let's understand how to set up our Python environment.</p>
+      <p><b>Local Environment Setup</b><p></p>
+      <p>Open a terminal window and type "python" to find out if it is already installed and which version is installed.
+      
+       <br>* Unix (Solaris, Linux, FreeBSD, AIX, HP/UX, SunOS, IRIX, etc.)
+       <br>* Win 9x/NT/2000
+       <br>* Macintosh (Intel, PPC, 68K)
+       <br>* OS/2
+       <br>* DOS (multiple versions)
+       <br>* PalmOS
+       <br>* Nokia mobile phones
+       <br>* Windows CE
+       <br>* Acorn/RISC OS
+       <br>* BeOS
+       <br>* Amiga
+       <br>* VMS/OpenVMS
+       <br>* QNX
+       <br>* VxWorks
+       <br>* Psion
+       <br>* Python has also been ported to the Java and .NET virtual machines
+        </p>
+      <br>
+      <div class="boxed">
+      <b>Installing Python</b>
+      <p> Python distribution is available for a wide variety of platforms. You need to download only the binary code applicable for your platform and install Python.
+      
+        <br> If the binary code for your platform is not available, you need a C compiler to compile the source code manually. Compiling the source code offers more flexibility in terms of choice of features that you require in your installation.
+      </p>
+      </div>
+        <br>Here is a quick overview of installing Python on various platforms −</p>
+      
+      <br>
+      <p>
+      <b>Unix and Linux Installation</b><br>
+      
+      <b><br>Windows Installation</b>
+      <p> Here are the steps to install Python on Windows machine.
+      
+        <li>Open a Web browser and go to https://www.python.org/downloads/.</li>
+        
+        <li>Follow the link for the Windows installer python-XYZ.msi file where XYZ is the version you need to install.</li>
+        
+        <li>To use this installer python-XYZ.msi, the Windows system must support Microsoft Installer 2.0. Save the installer file to your local machine and then run it to find out if your machine supports MSI.</li>
+        
+        <li>Run the downloaded file. This brings up the Python install wizard, which is really easy to use. Just accept the default settings, wait until the install is finished, and you are done.</li>
+     </p> 
+      <p> <b>Setting path at Unix/Linux</b></p>
+      <p>To add the Python directory to the path for a particular session in Unix −</p>
+      <p><b>In the csh shell</b>:type setenv PATH "$PATH:/usr/local/bin/python" and press Enter.</p>
+      <p><b>In the bash shell (Linux)</b>:type export PATH="$PATH:/usr/local/bin/python" and press Enter.</p>
+      <p><b>In the sh or ksh shell </b>: type PATH="$PATH:/usr/local/bin/python" and press Enter.</p>
+      <p><b>Note</b>: /usr/local/bin/python is the path of the Python directory.</p>
+      
+      <p> <b>Setting path at Unix/Linux</b></p>
+      <p>To add the Python directory to the path for a particular session in Windows −</p>
+      <p><b>At the command prompt</b>:type path %path%;C:\Python and press Enter.</p>
+      <p><b>Note</b>:C:\Python is the path of the Python directory.</p>
+      </div></div>
+</body>
+</html>

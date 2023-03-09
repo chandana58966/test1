@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Python Tutorial</title>
+	<link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+<div class="sidebar">
+<header>Python Concepts</header>
+<ul class="nav-menu">
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+<li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+</div>
+<script>
+$('.feat-btn').click(function(){
+	$('.sidebar ul.feat-show').toggleClass("show");
+	$('.sidebar ul li a i.first').toggleClass("rotate");
+});
+$('.serv-btn').click(function(){
+	$('.sidebar ul.serv-show').toggleClass("show1");
+	$('.sidebar ul li a i.second').toggleClass("rotate");
+});
+$('.serv-btn1').click(function(){
+	$('.sidebar ul.serv-show1').toggleClass("show2");
+	$('.sidebar ul li a i.third').toggleClass("rotate");
+});
+
+</script>
+
+<div id="main">
+<div class="header">
+<header><b>Python Tutorials</b></header>
+
+<p>Python is an interpreted and general-purpose programming language that emphasizes code readability with its use of significant indentation.</p>
+<p>Its object-oriented approach helps programmers write clear, logical code for small and large-scale projects.</p>
+<p>Python comes with a comprehensive standard library and has a wide range of third-party library support. As a result, Python is the choice of most developers for data science and machine learning applications.</p>
+<p>This page features all of our Python Basics, starting from the basic level will improve your growth.</p>
+<p>Each tutorial contains a quiz to learn and practice a specific topic/concept in detail.</p>
+  
+<p class="font-weight-bolder">Click on each topic to learn in detail</p></div></div>
+</body>
+</html>

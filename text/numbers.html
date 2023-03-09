@@ -1,0 +1,278 @@
+<html>
+    <head>
+    <title>Python Tutorial</title>
+      <link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+    <div class="sidebar">
+    <header>Python Concepts</header>
+    <ul class="nav-menu">
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+    </div>
+    <script>
+    $('.feat-btn').click(function(){
+      $('.sidebar ul.feat-show').toggleClass("show");
+      $('.sidebar ul li a i.first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+      $('.sidebar ul.serv-show').toggleClass("show1");
+      $('.sidebar ul li a i.second').toggleClass("rotate");
+    });
+    $('.serv-btn1').click(function(){
+      $('.sidebar ul.serv-show1').toggleClass("show2");
+      $('.sidebar ul li a i.third').toggleClass("rotate");
+    });
+    
+    </script>
+<div id="main">
+<div class="header">
+<header><b>Numbers</b></header>
+<p><b>Summary:</b> in this tutorial, you’ll learn about Python numbers and how to use them in programs.
+Python supports integers, floats, and complex numbers. This tutorial discusses all of them.</p>
+
+<b>Integers: Int</b>
+
+<p>In Python, integers are zero, positive or negative whole numbers without a fractional part and having unlimited precision, e.g. 0, 100, -10. The followings are valid integer literals in Python.</p>
+<strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+>>> 0
+0
+>>> 100
+100
+>>> -10
+-10
+>>> 1234567890
+1234567890
+>>> y=5000000000000000000000000000000000000000000000000000000
+5000000000000000000000000000000000000000000000000000000</code></pre></p>
+<p>Integers can be binary, octal, and hexadecimal values.</p><pre class="language-javascript"><code>
+>>> 0b11011000 # binary
+216
+>>> 0o12 # octal
+10
+>>> 0x12 # hexadecimal
+15
+</code></pre>
+<p>All integer literals or variables are objects of the int class. Use the type() method to get the class name, as shown below.</p>
+<strong>Here is an example:</strong>
+<pre><code>
+>>>type(100)
+<class 'int'> # type of x is int
+    
+>>> x=1234567890
+>>> type(x)
+<class 'int'> # type of x is int
+    
+>>> y=5000000000000000000000000000000000000000000000000000000
+>>> type(y) # type of y is int
+<class 'int'>
+</code></pre></p>
+<p>Leading zeros in non-zero integers are not allowed e.g. 000123 is invalid number, 0000 is 0.</p>
+<pre class="language-javascript"><code>
+>>> x=01234567890
+SyntaxError: invalid token
+</code></pre>
+<p>Python does not allow comma as number delimiter. Use underscore _ as a delimiter instead.</p>
+<pre class="language-javascript"><code>
+>>> x=1_234_567_890
+>>> x
+    1234567890
+</code></pre>
+<p>Note that integers must be without a fractional part (decimal point). It it includes a fractional then it becomes a float.</p>   
+<pre class="language-javascript"><code>
+>>> x=5
+>>> type(x)
+<class 'int'>
+>>> x=5.0
+>>> type(x)
+<class 'float'>
+</code></pre>
+<p>The int() function converts a string or float to int.</p>
+<pre class="language-javascript"><code>
+>>> int('100')
+100
+>>> int('-10')
+-10
+>>> int('5.5')
+5
+>>> int('100', 2)
+4
+</code></pre>
+<b> Binary</b>
+<p>A number having 0b with eight digits in the combination of 0 and 1 represent the binary numbers in Python. For example, 0b11011000 is a binary number equivalent to integer 216.</p>     
+<pre class="language-javascript"><code>
+>>> x=0b11011000
+>>> x
+216
+>>> x=0b_1101_1000
+>>> x
+216
+>>> type(x)
+<class 'int'>
+</code></pre>
+<b> Octal</b>
+<p>A number having 0o or 0O as prefix represents an octal number. For example, 0O12 is equivalent to integer 10.</p>     
+<pre class="language-javascript"><code>
+>>> x=0o12
+>>> x
+10
+>>> type(x)
+<class 'int'>
+</code></pre>
+<b>Hexadecimal</b>
+<p>A number with 0x or 0X as prefix represents hexadecimal number. For example, 0x12 is equivalent to integer 18.</p>     
+<pre class="language-javascript"><code>
+>>> x=0x12
+>>> x
+18
+>>> type(x)
+<class 'int'>
+</code></pre>
+<b>Float</b>
+<p>In Python, floating point numbers (float) are positive and negative real numbers with a fractional part denoted by the decimal symbol . or the scientific notation E or e, e.g. 1234.56, 3.142, -1.55, 0.23.</p>     
+<pre class="language-javascript"><code>
+>>> f=1.2
+>>> f
+1.2
+>>> type(f)
+<class 'float'>   
+</code></pre>
+<p>Floats can be separated by the underscore _, e.g. 123_42.222_013 is a valid float.</p>     
+<pre class="language-javascript"><code>
+>>> f=123_42.222_013
+>>> f
+12342.222013   
+</code></pre>
+<p>Floats has the maximum size depends on your system. The float beyond its maximum size referred as "inf", "Inf", "INFINITY", or "infinity". Float 2e400 will be considered as infinity for most systems.</p>     
+<pre class="language-javascript"><code>
+>>> f=2e400
+>>> f
+inf   
+</code></pre>
+<p>Scientific notation is used as a short representation to express floats having many digits. For example: 345.56789 is represented as 3.4556789e2 or 3.4556789E2</p>     
+<pre class="language-javascript"><code>
+>>> f=1e3
+>>> f
+1000.0
+>>> f=1e5
+>>> f
+100000.0
+>>> f=3.4556789e2
+>>> f
+345.56789   
+</code></pre>
+<p>Use the float() function to convert string, int to float.</p>     
+<pre class="language-javascript"><code>
+>>> float('5.5')
+5.5
+>>> float('5')
+5.0
+>>> float('     -5')
+-5.0
+>>> float('1e3')
+1000.0
+>>> float('-Infinity')
+-inf
+>>> float('inf')
+inf   
+</code></pre>
+<b>Complex Numbers</b>
+<p>A complex number is a number with real and imaginary components. For example, 5 + 6j is a complex number where 5 is the real component and 6 multiplied by j is an imaginary component.</p>     
+<pre class="language-javascript"><code>
+>>> a=5+2j
+>>> a
+(5+2j)
+>>> type(a)
+<class 'complex'>
+</code></pre>
+<p>You must use j or J as imaginary component. Using other character will throw syntax error.</p>
+<pre class="language-javascript"><code>
+>>> a=5+2k
+SyntaxError: invalid syntax
+>>> a=5+j
+SyntaxError: invalid syntax
+>>> a=5i+2j
+SyntaxError: invalid syntax
+</code>
+<b> Arithmetic Operations on Complex Numbers</b>
+<p>Addition and subtraction of complex numbers is straightforward. Real and imaginary parts are added/subtracted to get the result.</p>
+<pre class="language-javascript"><code>
+>>> a=6+4j
+>>> a+2
+(8+4j)
+>>> a*2
+(12+8j)
+>>> a/2
+(3+2j)
+>>> a**2
+(20+48j)
+>>> b=3+2j
+>>> a+b    
+(9+6j)    
+>>> a-b    
+(3+2j)
+</code></pre>
+<p>The arithmetic operators can also be used with two complex numbers, as shown below.</p>
+<pre class="language-javascript"><code>
+>>> a=6+4j
+>>> b=3+2j
+>>> a+b    
+(9+6j)    
+>>> a-b    
+(3+2j)
+>>> a*b    
+(10+24j)
+</code></pre>
+<p>The process of multiplying these two complex numbers is very similar to multiplying two binomials. Multiply each term in the first number by each term in the second number.</p>
+<pre class="language-javascript"><code>
+a=6+4j             
+b=3+2j             
+c=a*b              
+c=(6+4j)*(3+2j)    
+c=(18+12j+12j+8*-1)
+c=10+24j
+</code>
+
+</body>
+</html>

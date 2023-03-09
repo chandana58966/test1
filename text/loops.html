@@ -1,0 +1,220 @@
+<html>
+    <head>
+    <title>Python Tutorial</title>
+      <link rel="stylesheet" href="C:\Users\Public\public Desktop\Web Learning-project\Style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="C:\Users\Public\public Desktop\Web Learning-project\logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="C:\Users\Public\public Desktop\Web Learning-project\mainpage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Concepts.html">CONCEPTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\Quiz2.html">QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\Public\public Desktop\Web Learning-project\snakegame.html">GAME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+    <div class="sidebar">
+    <header>Python Concepts</header>
+    <ul class="nav-menu">
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\getstarted.html">Get Started with Python</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\vartypes.html">Variable types</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\basicoper.html">Basic Operators</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\loops.html">Loops</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\numbers.html">Numbers</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\strings.html">Strings</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\lists.html">Lists</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\functions.html">Functions</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\modules.html">Modules</a></li>
+    <li><a href="C:\Users\Public\public Desktop\Web Learning-project\exechand.html">Execption Handling</a></li>
+    </div>
+    <script>
+    $('.feat-btn').click(function(){
+      $('.sidebar ul.feat-show').toggleClass("show");
+      $('.sidebar ul li a i.first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+      $('.sidebar ul.serv-show').toggleClass("show1");
+      $('.sidebar ul li a i.second').toggleClass("rotate");
+    });
+    $('.serv-btn1').click(function(){
+      $('.sidebar ul.serv-show1').toggleClass("show2");
+      $('.sidebar ul li a i.third').toggleClass("rotate");
+    });
+    
+    </script>
+<div id="main">
+<div class="header">
+<header><b>Loops</b></header>
+<p>There are two types of loops in Python, for and while.</p>
+<b>The "for" loop</b>
+<p>For loops iterate over a given sequence.</p>
+<strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+primes = [2, 3, 5, 7]
+for prime in primes:
+    print(prime)
+</code></pre></p>
+<strong>Run:</strong>
+<pre class="language-javascript"><code>
+2
+3
+5
+7
+</code></pre>
+<li>For loops can iterate over a sequence of numbers using the "range" and "xrange" functions. The difference between range and xrange is that the range function returns a new list with numbers of that specified range, whereas xrange returns an iterator, which is more efficient. (Python 3 uses the range function, which acts like xrange). Note that the range function is zero based.</li>
+<strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+# Prints out the numbers 0,1,2,3,4
+for x in range(5):
+    print(x)
+
+# Prints out 3,4,5
+for x in range(3, 6):
+    print(x)
+
+# Prints out 3,5,7
+for x in range(3, 8, 2):
+    print(x)
+</code></pre></p>
+<strong>Run:</strong>
+<pre class="language-javascript"><code>
+    0
+    1
+    2
+    3
+    4
+    3
+    4
+    5
+    3
+    5
+    7    
+</code></pre>
+    
+<br><b>"while" loops</b>
+<p>While loops repeat as long as a certain boolean condition is met.</p>
+
+<strong>Here is an example:</strong>
+<pre class="language-javascript"><code>
+# Prints out 0,1,2,3,4
+
+count = 0
+while count < 5:
+    print(count)
+    count += 1  # This is the same as count = count + 1
+</code>
+    </pre>
+
+    <strong>Run:</strong>
+    <pre class="language-javascript"><code>
+
+    0
+    1
+    2
+    3
+    4
+    </code></pre>
+
+
+
+<b>"break" and "continue" statements</b>
+<p><strong>break</strong> is used to exit a for loop or a while loop, whereas <strong>continue</strong> is used to skip the current block, and return to the "for" or "while" statement. </p>
+
+<strong>A few examples:</strong>
+<pre class="language-javascript"><code>
+# Prints out 0,1,2,3,4
+
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        break
+
+# Prints out only odd numbers - 1,3,5,7,9
+for x in range(10):
+    # Check if x is even
+    if x % 2 == 0:
+        continue
+    print(x)
+</code></pre>
+
+<strong>Run:</strong>
+<pre class="language-javascript"><code>
+    
+    0
+    1
+    2
+    3
+    4
+    1
+    3
+    5
+    7
+    9
+</code></pre>
+
+
+<b>Can we use "else" clause for loops?</b>
+<p>Unlike languages like C,CPP.. we can use <strong>else</strong> for loops. When the loop condition of "for" or "while" statement fails then code part in "else" is executed. If a <strong>break</strong> statement is executed inside the for loop then the "else" part is skipped.
+Note that the "else" part is executed even if there is a <strong>continue</strong> statement.</p>
+<p>Here are a few examples:</p>
+<strong>A few examples:</strong>
+<pre class="language-javascript"><code>
+    # Prints out 0,1,2,3,4 and then it prints "count value reached 5"
+
+    count=0
+    while(count < 5):
+        Print(count)
+        Count+=1 
+    else:
+         print("count value reached %d" %(count))
+    
+     # Prints out 1,2,3,4
+    for i in range(1, 10):
+        if(i%5==0):
+            break
+        print(i)
+        print("this is not printed because for loop is terminated 
+        because of break but not due to fail in condition")
+       
+         
+</code></pre>
+<strong>Run:</strong>
+<pre class="language-javascript"><code>
+    0
+    1
+    2
+    3
+    4
+    count value reached 5
+    1
+    2
+    3
+    4
+</code></pre>
+</body>
+</html>
